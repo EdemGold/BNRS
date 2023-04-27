@@ -1,494 +1,234 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buildnrun</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
 
-  <title>BuildNRun</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/d22d8f1538.js" crossorigin="anonymous"></script>
+ 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html">BuildNRun</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="getstarted scrollto" href="waitlist.html">Join our Waitlist</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>We build and run your store on the internet</h1>
-          <h2>We are team of talented developers focused on building and maintaining stores on the internet for every business in Africa.</h2>
-          <!--<div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Contact Us</a>
-           <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> 
-          </div>--->
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Clients Section ======= 
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
+    <header class="header" id="home">
+        <div class="logo">
+           <img src="./images/logo.jpeg" alt="logo">
         </div>
 
-      </div>
-    </section><End Cliens Section -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Us</h2>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#services">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
 
-        <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              At BuildNRun we aim to empower businesses in Africa by making e-commerce more accessible and affordable for all. We believe that every business that buys and sells should have a place on the internet, and we're dedicated to making that a reality through our innovative solutions and expert services.
-            </p>
-            <a class="getstarted scrollto" href="waitlist.html">Join our Waitlist</a>
+
+        <div  id="desktop-getStarted" class="getStarted">
+            <a href="#">Join our waitlist</a>
+        </div>
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+            <ul class="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="getStarted"><a href="#" style="color:black;">Join our waitlist</a></li>
+              </ul>
+             
           </div>
-        </div>
 
-      </div>
-    </section><!-- End About Us Section -->
+      
+    </header>
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
 
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+    <div class="main">
+        <div class="section1">
 
             <div class="content">
-              <h3>Here is why we are <strong>the best people to build and manage your store on the internet.</strong></h3>
+                <h1>We <span class="gradient">build and run</span> your store on the internet</h1>
+                <p>We are team of talented developers focused on building and maintaining stores on the internet for
+                    every business in Africa. Sit back and watch us do the work for you.</p>
+                <div class="getStarted"><a href="#">Join Our Waitlist</a></div>
             </div>
 
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Expertise in African Ecommerce <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                       As a software firm with a focus on building e-commerce websites for businesses in Africa, we have specialized knowledge and experience that sets us apart. Our team of experts in African business, technology, and e-commerce are committed to helping our clients succeed in the African marketplace.
-                    </p>
-                  </div>
-                </li>
+            <div class="hero-images">
+                <div class="three-img">
+                    <div class="image"><img src="./images/team2.jpg"></div>
+                    <div class="image"><img src="./images/internet.avif"></div>
+                    <div class="image"><img src="./images/deal.avif"></div>
+                </div>
 
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Affordable and accessible solutions <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                       At BuildNRun, we believe that every business in Africa should have access to e-commerce solutions that are affordable and accessible. That's why we offer tailored solutions that are designed to meet the unique needs of African businesses, without breaking the bank.
-                    </p>
-                  </div>
-                </li>
+                <div class="three-img">
+                    <div class="image"><img src="./images/single.jpg"></div>
+                    <div class="image"><img src="./images/team.avif"></div>
 
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Comprehensive Support and Resources<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      When you choose BuildNRun as your e-commerce provider, you're getting a partner. We provide comprehensive support and resources to our clients, from platform setup to marketing strategies, so you can focus on running your business while we take care of the technical details.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>04</span>Attentive and Understanding Customer Service<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      We believe that customer support is a critical component of our service offering. We know that issues can arise, and when they do, our team of dedicated support professionals is here to help. We offer a range of customer support options, including email support, phone support, and live chat support. Our support team is available 24/7 to answer your questions and resolve any issues that you may encounter
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
+                </div>
             </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-   
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>What we can do for you</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Build and Run an internet based store</a></h4>
-              <p>We specialize in building e-commerce stores for users in Africa, helping businesses establish a strong online presence and reach their target audience.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Design an internet focused marketing plan</a></h4>
-              <p>We offer a comprehensive marketing plan design service to help businesses in Africa establish a strong online presence and reach their target audience. Our team of experts will work closely with you to understand your business goals and develop a customized marketing strategy that aligns with your unique needs and increase your online visibility.</p>
-            </div>
-          </div>
 
         </div>
 
-      </div>
-    </section><!-- End Services Section -->
+        <div class="section2">
+            <h2>Why choose us</h2>
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
+            <div class="flex">
+                <div class="content">
+                    <h3>Expertise in African Ecommerce</h3>
+                    <p>As a software firm with a focus on building e-commerce websites for businesses in Africa, we have
+                        specialized knowledge and experience that sets us apart. Our team of experts in African
+                        business, technology, and e-commerce are committed to helping our clients succeed in the African
+                        marketplace.</p>
+                </div>
 
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Our mission at BuildNRun is to empower businesses in Africa by making e-commerce accessible and affordable for all. We believe that every business that buys and sells should have a place on the internet, and we're dedicated to making that a reality through our innovative solutions and expert services</p>
-
-            <p> Contact us and let us build you a store on the internet!</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://forms.gle/DHT94kPz8Nk6oUfw9">Contact us</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section ======= 
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                <div class="image">
+                    <img src="./images/img1.avif" alt="expertise img">
+                </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+            <div class="flex">
+                <div class="image">
+                    <img src="./images/img2.avif" alt="accessible solutions">
+                </div>
+                <div class="content">
+                    <h3>Affordable and accessible solutions</h3>
+                    <p>As a software firm with a focus on building e-commerce websites for businesses in Africa, we have
+                        specialized knowledge and experience that sets us apart. Our team of experts in African
+                        business, technology, and e-commerce are committed to helping our clients succeed in the African
+                        marketplace.</p>
+                </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+            <div class="flex">
+                <div class="content">
+                    <h3>Comprehensive Support and Resources</h3>
+                    <p>When you choose BuildNRun as your e-commerce provider, you're getting a partner. We provide
+                        comprehensive support and resources to our clients, from platform setup to marketing strategies,
+                        so you can focus on running your business while we take care of the technical details..</p>
+                </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                <div class="image">
+                    <img src="./images/img3.jpg">
+                </div>
             </div>
-          </div>
+            <div class="flex">
+                <div class="image">
+                    <img src="./images/img4.avif" alt="customer service">
+                </div>
+                <div class="content">
+                    <h3>Attentive and Understanding Customer Service</h3>
+                    <p>We believe that customer support is a critical component of our service offering. We know that
+                        issues can arise, and when they do, our team of dedicated support professionals is here to help.
+                        We offer a range of customer support options, including email support, phone support, and live
+                        chat support. Our support team is available 24/7 to answer your questions and resolve any issues
+                        that you may encounter.</p>
+                </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+
             </div>
-          </div>
+
 
         </div>
 
-      </div>
-    </section><!-- End Portfolio Section -->
 
+        <div class="section3" id="services">
+            <h2>Check out our products</h2>
+            <div class="cards">
+                <div class="card" id="card">
+                    <h3>Marketspot</h3>
+                    <p>Marketspot is a vertically integrated multi vendor marketplace that connects sellers and buyers in a seamless and secure way. You can create your own store within Marketspot and access a range of services and products that complement and enhance your selling experience. <div class="getStarted"><a href="waitlist.html">Join Our Waitlist</a></div> </p>
+                </div>
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Here are a few questions commonly asked by our customers. if you have a question ypu still want answered, email us at: help@buildnrun.com</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Do your stores support payment integration?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                 Yes. All stores we build have a payment integration feature built in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">How much do you charge to build a store? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  At BuildNRun affordability is a core principle for us, we believe that every business should be able to get on the internet without having to pay a lot. For an exact cost, please <a href="https://forms.gle/DHT94kPz8Nk6oUfw9">Contact Us</a>.
-                </p>
-              </div>
-            </li>
-
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Lagos, Nigeria</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>contact@buildnrun.org</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+234 70 669 85 640 <br> +234 70 888 541 64</p>
-              </div>
+                <div class="card" id="card">
+                    <h3>AIStudent</h3>
+                    <p>AIStuent is an AI-powered chatbot system that will revolutionize the way students learn and study. AIStudent is designed to help students with their academic needs by providing intelligent and accurate answers to their questions on various topics, including assignments, tests, and other school-related inquiries.<div class="getStarted"><a href="AIstudent.html">Learn More</a></div></p>
+                </div>
 
             </div>
-
-          </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BuildNRun</h3>
-            <p>
-              Lagos, Nigeria 
-              <br>
-              <strong>Email:</strong> contact@buildnrun.org<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              < <li><a class="nav-link scrollto active" href="#">Home</a></li>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
-              <li><a class="nav-link scrollto" href="#services">Services</a></li>
-              <li><a class="getstarted scrollto" href="waitlist.html">Join our Waitlist</a></li>
-            </ul>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Connect With Us!</h4>
-            <div class="social-links mt-3">
-              <a href="https://twitter.com/BuildnRun_" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://instagram.com/buildnrun" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/buildnrun" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
         </div>
-      </div>
+
+        <div class="section4">
+            <div class="section4-inner">
+                <h2>What are you waiting for?</h2>
+                <p>Our mission at BuildNRun is to empower businesses in Africa by making e-commerce accessible and
+                    affordable for all. We believe that every business that buys and sells should have a place on the
+                    internet, and we're dedicated to making that a reality through our innovative solutions and expert
+                    services
+                    Contact us and let us build you a store on the internet!</p>
+                <div class="getStarted">
+                    <a href="waitlist.html">Join our waitlist</a>
+                </div>
+            </div>
+        </div>
+
+                <footer>
+            <div class="footer-inner">
+                <div class="logo-email">
+                    <div class="flogo">
+                        <img src="./images/logo.jpeg" alt="logo">
+
+                        <span>BUILDNRUN</span>
+                    </div>
+
+
+                    <div class="column">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Product</a></li>
+                            <li><a href="about.html">About us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="line"></div>
+                <div class="bottom">
+                    <div class="rights">
+                        <p>© Build N Run 2023. All rights reserved.</p>
+                    </div>
+
+                    <div class="terms-policy">
+                        <p>Terms of Service | Privacy Policy </p>
+                    </div>
+
+                    <div class="connection" id="contact">
+                        <h5>Connect with us!</h5>
+                        <div class="links">
+                            <a href="https://instagram.com/buildnrun"> <i class="fa-brands fa-instagram icon"></i></a>
+                            <a href="https://www.linkedin.com/company/buildnrun"> <i class="fa-brands fa-linkedin icon"></i></a>
+                            <a href="https://twitter.com/BuildnRun_"> <i class="fa-brands fa-twitter icon"></i></a>
+                            <b>Email: contact@buildnrun.org<b>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
     </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>BuildNRun. 2023</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+  </script>
 </body>
 
 </html>
