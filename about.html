@@ -1,236 +1,431 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./card_css.css">
+  <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/d22d8f1538.js" crossorigin="anonymous"></script>
 
-  <title>About Us</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <style>
+    .our-story {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    .our-story-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      padding: 0 30px;
+      background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
+        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
+        linear-gradient(161deg, #37b7fe 0%, #fbb500 46%);
+      border-radius: 15px;
+    }
 
 
+
+    .rotate {
+      text-decoration: line;
+      background: #37B7FE;
+      background: linear-gradient(to right, #37B7FE 0%, #FBB500 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: underline;
+      padding: 10px;
+      font-size: 3rem;
+      font-family: verdana, sans-serif;
+      color: black;
+      transform: rotate(-90deg);
+    }
+
+    .our-story-inner .content {
+      /* border:1px solid red; */
+      padding: 20px;
+      border: 5px;
+      background: linear-gradient(to right, #37B7FE 0%, #FBB500 100%);
+    }
+
+    .our-story-inner .content p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+      color: #f0faff;
+    }
+
+    .our-story-inner .content p::first-letter {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #8D8D8D;
+    }
+
+    .whatwedo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f0faff;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem 0;
+      padding: 0 50px;
+    }
+
+    .whatwedo .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .whatwedo .img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .whatwedo .img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .whatwedo .title h2 {
+      text-transform: uppercase;
+      padding: 10px;
+      font-size: 3rem;
+      text-align: center;
+      background: linear-gradient(to right, #37B7FE 0%, #FBB500 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: underline;
+    }
+
+    .whatwedo .content {
+      flex: 1;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+      color: #8D8D8D;
+      /* color: #4B4B4B; */
+    }
+
+
+    .our-mission {
+      display: flex;
+      flex-direction: column;
+      background-color: linear-gradient(to right, #37B7FE 0%, #FBB500 100%);
+      padding: 20px 50px;
+      border: 5px;
+      background: linear-gradient(to right, #37B7FE 0%, #FBB500 100%);
+    }
+
+    .our-mission h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #8D8D8D;
+      text-align: center;
+    }
+
+    .our-mission p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+      /* color: #8D8D8D; */
+      color: #4B4B4B;
+    }
+
+    @media screen and (max-width:480px) {
+      .our-story-inner {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 10px;
+        /* background: white; */
+      }
+
+      .our-story-inner .content p {
+        color: #8D8D8D;
+      }
+
+      .our-story-inner .content {
+        background: white;
+        /* font-size:1rem;
+   line-height: ; */
+      }
+
+      .rotate {
+        transform: rotate(0deg);
+        font-size: 2rem;
+      }
+
+      .whatwedo {
+        padding: 10px;
+      }
+
+      .whatwedo .title {
+        flex-direction: column-reverse;
+      }
+
+      .whatwedo .img {
+        width: 100%;
+        height: auto;
+        /* border:1px solid red; */
+      }
+
+    }
+  </style>
 </head>
 
 <body>
+  <header class="header" id="home">
+    <div class="logo">
+      <img src="./images/logo.jpeg" alt="logo">
+    </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
-    <div class="container d-flex align-items-center">
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#services">Products</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
 
-      <h1 class="logo me-auto"><a href="index.html">BuildNRun</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto active" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Services</a></li>
-          <li><a class="getstarted scrollto" href="waitlist.html">Join our Waitlist</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+    <div id="desktop-getStarted" class="getStarted">
+      <a href="./waitlist.html">Join our waitlist</a>
+    </div>
+
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#services">Products</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+        <li id="getStarted"><a href="./waitlist.html" style="color:black;">Join our waitlist</a></li>
+      </ul>
 
     </div>
-  </header><!-- End Header -->
 
-  <main id="main">
 
-        <h2>About Us</h2>
-    </section><!-- End Breadcrumbs -->
+  </header>
 
-    <section class="inner-page">
-      <div class="container">
-        <h2 id="history">Our History</h3>
-      <p>
-    BuildNRun was founded by two Nigerian teenagers, Edem Gold and Breakthrough Makanjuola, who are determined to help businesses in Africa get online quickly and affordably. Edem and Breakthrough each had unique skill sets that complemented each other perfectly.
-  </p>
-
-  <p>
-     Edem was an expert in coding and the technical aspects of building websites and managing teams, while Breakthrough was a natural when it came to talking to people and marketing the services. Together, they assembled a team of expert developers and designers who shared their passion for making a difference, and they've since helped hundreds of businesses get online and reach new customers.
-</p>
-    
+  <div class="our-story">
+    <div class="our-story-inner">
+      <div class="heading">
+        <h1 class="rotate">OUR STORY</h1>
       </div>
-    </section>
+      <div class="content">
+        <p>BuildNRun was founded by two Nigerian teenagers, Edem Gold and Breakthrough Makanjuola, who are determined to
+          help businesses in Africa get online quickly and affordably. Edem and Breakthrough each had unique skill sets
+          that complemented each other perfectly.
 
-
-
-    <section class="inner-page">
-      <div class="container">
-        <h2 id="why">Why we do what we do</h3>
-
-    <p>
-      BuildNRun is a software firm which focuses on building and maintaing Virtual Stores for everyone selling in Africa. The core focus and mission of BuildNRun is to make it extremely easy and stress free for businsses to get online, hereby, making it possible for sellers to focus on operating their businesses while we focus on making their stores work so they don’t have to.
-    </p>
-    <p>
-    At BuildNRun, we believe that every business deserves a place on the internet, no matter how small. That's why we not only build and design e-commerce websites, but we also offer maintenance and support services so that our clients can focus on running their businesses instead of worrying about website maintenance.
-  </p>
-
-    <p>
-    We know that running a business is hard work, and we're committed to making the process of getting online as easy and stress-free as possible. Our team is always up-to-date on the latest trends and technologies in e-commerce, and we're always looking for ways to improve our services.
-  </p>
-    </div>
-    </section>
-
-    <section class="inner-page">
-      <div class="container">
-        <h2> Here's what BNR is</h2>
-        <p>
-          BuildNRun is a cutting-edge technology company that specializes in developing innovative solutions to complex problems. Our team of experienced engineers and developers is dedicated to using the latest technologies and techniques to design and build custom software, applications, and systems that solve the most pressing challenges faced by businesses today.
+          Edem was an expert in coding and the technical aspects of building websites and managing teams, while
+          Breakthrough was a natural when it came to talking to people and marketing the services. Together, they
+          assembled a team of expert developers and designers who shared their passion for making a difference, and
+          they've since helped hundreds of businesses get online and reach new customers.
         </p>
 
-        <p>
-       From streamlining internal processes to developing advanced data analytics tools, our solutions are designed to help businesses stay ahead of the curve and achieve their goals. We pride ourselves on delivering high-quality, reliable solutions that are tailored to each client's unique needs and requirements.
+      </div>
+    </div>
+  </div>
+
+  <div class="whatwedo">
+    <div class="title">
+      <div class="img">
+        <img src="./images/what-we.avif" alt="what we do">
+      </div>
+      <h2>What we do , why we do</h2>
+    </div>
+
+    <div class="content">
+      <p>BuildNRun is a software firm which focuses on building and maintaing Virtual Stores for everyone selling in
+        Africa. The core focus and mission of BuildNRun is to make it extremely easy and stress free for businsses to
+        get online, hereby, making it possible for sellers to focus on operating their businesses while we focus on
+        making their stores work so they don’t have to.
+        At BuildNRun, we believe that every business deserves a place on the internet, no matter how small. That's why
+        we not only build and design e-commerce websites, but we also offer maintenance and support services so that our
+        clients can focus on running their businesses instead of worrying about website maintenance.
+        We know that running a business is hard work, and we're committed to making the process of getting online as
+        easy and stress-free as possible. Our team is always up-to-date on the latest trends and technologies in
+        e-commerce, and we're always looking for ways to improve our services.
+        At BuildNRun, we believe that technology can be a powerful force for positive change, and we are committed to
+        leveraging its full potential to make a difference in the world. Whether you are a small startup or a large
+        enterprise, we are here to help you build the solutions you need to succeed in today's fast-paced digital
+        landscape.
       </p>
-      <p>
-       At BuildNRun, we believe that technology can be a powerful force for positive change, and we are committed to leveraging its full potential to make a difference in the world. Whether you are a small startup or a large enterprise, we are here to help you build the solutions you need to succeed in today's fast-paced digital landscape.
-
-      </p>
-
-      </div>
-    </section>
-
-<section class="inner-page">
-      <div class="container">
-        <h2 id="mission">Our Mission Statement</h3>
-   Our mission at BuildNRun is to empower Africa by building solutions to complex problems throughh technology, and we're dedicated to making that a reality through our innovative solutions and expert services.
-
     </div>
-    </section>
+  </div>
 
- <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Founding Team</h2>
-          <p>“Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.” — Margaret Mead</p>
+  <div class="our-mission">
+    <h1>OUR MISSION</h1>
+    <p>Our mission at BuildNRun is to empower Africa by building solutions to complex problems throughh technology,
+      and we're dedicated to making that a reality through our innovative solutions and expert services.</p>
+  </div>
+
+  <!-- team section  -->
+
+  <div class="main">
+    <div class="founder">
+      <h2>FOUNDING TEAM</h2>
+      <p style="font-size:20px; line-height: 200%; color:#8D8D8D;">“Never doubt that a small group of thoughtful,
+        committed citizens can change the world; indeed, it's the only
+        thing that ever has.” — Margaret Mead</p>
+    </div>
+    <div class="teams">
+      <div class="team">
+        <div class="image">
+          <img src="./images/team-2.jpg" alt="edem pic" />
+        </div>
+        <div class="info">
+          <h3>Edem Gold</h3>
+          <h4>Software Engineer</h4>
+          <span>CEO</span>
+        </div>
+        <div class="buttons">
+          <div class="email">
+            <a href="mailto: contact@buildnrun.org"><i class="fa-solid fa-envelope icon"></i></a>
+            <span> Email</span>
+          </div>
+
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/m/in/edem-gold-06ab461b8" target="_blank"><i
+                class="fa-brands fa-linkedin icon"></i></a>
+            <span> Linkedin</span>
+          </div>
+        </div>
+        <div class="about">
+          <h3>About</h3>
+          <p>
+            Edem Gold is a Nigerian writer and Software Engineer. He has written about topics such as quantum computing,
+            AI/Machine Learning, and Software Engineering. He has been featured in publications such as; HackerNoon and
+            The Next Web.
+          </p>
         </div>
 
-        <div class="row">
-
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Edem Gold</h4>
-                <span>Co-Founder, CEO</span>
-                <p>Edem Gold is a Nigerian writer and Software Engineer. He has written about topics such as quantum computing, AI/Machine Learning, and Software Engineering. He has been featured in publications such as; HackerNoon and The Next Web.</p>
-                <div class="social">
-                  <a href="https://twitter.com/EdemGold1"><i class="ri-twitter-fill"></i></a>
-                  <a href="https://instagram.com/edemg_old"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://www.linkedin.com/m/in/edem-gold-06ab461b8"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
+        <div class="footer">
+          <a href="https://twitter.com/EdemGold1" target="_blank"><i class="fa-brands fa-square-twitter icon"></i></a>
+          <a href="https://www.linkedin.com/m/in/edem-gold-06ab461b8" target="_blank"><i
+              class="fa-brands fa-linkedin icon"></i></a>
+          <a href="https://instagram.com/edemg_old" target="_blank"><i
+              class="fa-brands fa-square-instagram icon"></i></a>
+          <a href="https://github.com/EdemGold" target="_blank"><i class="fa-brands fa-square-github icon"></i></a>
+        </div>
+      </div>
+      <div class="team">
+        <div class="image">
+          <img src="./images/team-1.jpg" alt="team1" alt="pic" />
+        </div>
+        <div class="info">
+          <h3>M. Breakthrough</h3>
+          <h4>Copywriter and Graphic designer</h4>
+          <span>CMO</span>
+        </div>
+        <div class="buttons">
+          <div class="email">
+            <a href="mailto: contact@buildnrun.org"><i class="fa-solid fa-envelope icon"></i></a>
+            <span> Email</span>
           </div>
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Makanjuola Breakthrough</h4>
-                <span>Co-Founder, CMO</span>
-                <p> Breakthrough Makanjuola is a Nigerian Copywriter and Graphic designer.  He focuses on the creative aspects of marketing and advertising. He has also served clients extensively on Fiverr and UpWork .</p>
-                <div class="social">
-                  <a href="https://twitter.com/Breakthrumusic_"><i class="ri-twitter-fill"></i></a>
-                  <a href="https://instagram.com/iambreakthroughmakanjuola"><i class="ri-instagram-fill"></i></a>
-                  <a href="http://www.linkedin.com/in/breakthrough-makanjuola-"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
+          <div class="linkedin">
+            <a href="http://www.linkedin.com/in/breakthrough-makanjuola-" target="_blank"><i
+                class="fa-brands fa-linkedin icon"></i></a>
+            <span> Linkedin</span>
           </div>
+        </div>
+        <div class="about">
+          <h3>About</h3>
+          <p>
+            M. Breakthrough is a Nigerian Copywriter and Graphic designer. He focuses on the creative aspects of
+            marketing and advertising. He has also served clients extensively on Fiverr and UpWork .He use incredibly
+            creative marketing skills to add value to your brand.
+          </p>
+        </div>
 
+        <div class="footer">
+          <a href="https://twitter.com/Breakthrumusic_" target="_blank"><i
+              class="fa-brands fa-square-twitter icon"></i></a>
+          <a href="http://www.linkedin.com/in/breakthrough-makanjuola-" target="_blank"><i
+              class="fa-brands fa-linkedin icon"></i></a>
+          <a href="https://instagram.com/iambreakthroughmakanjuola" target="_blank"><i
+              class="fa-brands fa-square-instagram icon"></i></a>
+          <a href="https://github.com/EdemGold" target="_blank"><i class="fa-brands fa-square-github icon"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- team section end -->
+
+  <!-- footer section  -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo-email">
+        <div class="flogo">
+          <img src="./images/logo.jpeg" alt="logo">
+
+          <span>BUILDNRUN</span>
+        </div>
+
+
+        <div class="column">
+          <h4>Useful links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Product</a></li>
+            <li><a href="about.html">About us</a></li>
+          </ul>
         </div>
 
       </div>
-    </section><!-- End Team Section -->
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+      <div class="line"></div>
+      <div class="bottom">
+        <div class="rights">
+          <p>© Build N Run 2023. All rights reserved.</p>
+        </div>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+        <div class="terms-policy">
+          <p>Terms of Service | Privacy Policy </p>
+        </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BuildNRun</h3>
-            <p>
-              Lagos, Nigeria 
-              <br>
-              <strong>Email:</strong>contact@buildnrun.org<br>
-            </p>
+        <div class="connection" id="contact">
+          <h5>Connect with us!</h5>
+          <div class="links">
+            <a href="https://instagram.com/buildnrun"> <i class="fa-brands fa-instagram icon"></i></a>
+            <a href="https://www.linkedin.com/company/buildnrun"> <i class="fa-brands fa-linkedin icon"></i></a>
+            <a href="https://twitter.com/BuildnRun_"> <i class="fa-brands fa-twitter icon"></i></a>
+            <!-- <b>Email: contact@buildnrun.org<b> -->
+            <a href="mailto: contact@buildnrun.org"><i class="fa-solid fa-envelope icon"></i></a>
+
+
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-              <li><a class="nav-link scrollto active" href="#about">About</a></li>
-              <li><a class="nav-link scrollto" href="index.html">Services</a></li>
-              <li><a class="getstarted scrollto" href="waitlist.html">Join our Waitlist</a></li>
-            </ul>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Connect With Us!</h4>
-            <div class="social-links mt-3">
-              <a href="https://twitter.com/BuildnRun_" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://instagram.com/buildnrun" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/buildnrun" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
+  </footer>
+  <!-- footer section end -->
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>BuildNRun. 2023</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script>
+    function toggleMobileMenu(menu) {
+      menu.classList.toggle('open');
+    }
+  </script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 

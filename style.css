@@ -286,9 +286,11 @@ footer {
 .logo-email {
     display: flex;
     /* align-items: center; */
+    /* flex-direction: column; */
     justify-content: space-between;
     gap: 2rem;
     width: 90%;
+    /* border:1px solid red; */
 }
 
 .flogo {
@@ -314,6 +316,11 @@ footer {
 .email-part p {
     margin-bottom: 1rem;
     color: #2B2B2B;
+}
+.email-part .sub-text{
+    color:#37b7fe;
+    margin-top:5px;
+   
 }
 
 .email-part .flex {
@@ -470,6 +477,9 @@ footer {
     .columns {
         width: 90%;
         gap: 2rem;
+    }
+    .email-part .flex input[type=submit] {
+        margin-top:1rem;
     }
 
     .rights p,

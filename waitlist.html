@@ -4,154 +4,235 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Marketsite Waiting list</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buildnrun</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./header.css">
+  <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/d22d8f1538.js" crossorigin="anonymous"></script>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <style>
+    .outer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    }
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    .inner {
+      width: 400px;
+      border: 2px solid #37B7FE;
+      padding: 20px 10px;
+      display: flex;
+      border-radius: 5px;
+      flex-direction: column;
+    }
 
-  <!-- =======================================================
-  * Template Name: Arsha - v4.11.0
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    .inner h2 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: .5rem;
+      color: #37B7FE;
+
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hr {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      width: 50%;
+      background-color: #37B7FE;
+      height: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .inner p {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      line-height: 1.3rem;
+      padding: 0 20px;
+    }
+
+    form input {
+      width: 100%;
+      height: 2.5rem;
+      margin-bottom: 1rem;
+      margin-top: 5px;
+      /* outline: none; */
+      border-radius: 5px;
+      border: 1px solid grey;
+      padding: 10px;
+      outline-color: #37B7FE;
+
+    }
+
+    form textarea {
+      width: 100%;
+      height: 4rem;
+      outline-color: #37B7FE;
+      resize: vertical;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid grey;
+      margin-top: 5px;
+    }
+
+    .join {
+      width: 100%;
+      height: 2.5rem;
+      margin-top: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: white;
+      background-color: #37B7FE;
+    }
+
+    label {
+      margin-bottom: 5px;
+      color: #37B7FE;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width:480px) {
+      .inner{
+        width:95%;
+      }
+      
+    }
+  </style>
+   <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
 </head>
 
 <body>
+  <header class="header" id="home">
+    <div class="logo">
+      <img src="./images/logo.jpeg" alt="logo">
+    </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
-    <div class="container d-flex align-items-center">
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#services">Products</a></li>
+        <li><a href="./about.html">About us</a></li>
+      </ul>
+    </div>
 
-      <h1 class="logo me-auto"><a href="index.html">BuildnRUN</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-  <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Services</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+
+    <!-- <div id="desktop-getStarted" class="getStarted">
+      <a href="#">Join our waitlist</a>
+    </div> -->
+
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#services">Products</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <!-- <li id="getStarted"><a href="#" style="color:black;">Join our waitlist</a></li> -->
+      </ul>
 
     </div>
-  </header><!-- End Header -->
 
-  <main id="main">
 
-          <div class="col">
-            <div class="portfolio-info">
-              <h2>Introducing Marketsite</h2>
-              <p>
+  </header>
 
-The internet is a world of opportunities and with e-commerce on the rise we want you to take advantage of it. It's hard to focus on the right thing, creating products without the stress of promoting, analyzing and managing payments in your business and we  know what if feels like, we needed an easy, integrated and accessible  platform that instead of convincing customers to trust your business is legitimate, you're verified which will establish customer trust and relationships. With this  we are excited to launch BNR MarketSite, a platform accessible for businesses to trade with customers and grow your business hassle free. In the coming months it will be  rolled out for testing, join our waiting list to be in the league of stress free businesses.
+  <div class="outer">
+    <div class="inner">
+      <h2>join the waitlist</h2>
+      <div class="center">
+        <div class="hr"></div>
+      </div>
 
-              </p>
-            
+      <p>Get on the list today and become one of the earliest user.</p>
+      <div class="form-part">
+        <form>
+          <label for="name">Name </label>
+          <input type="text" required>
+          <label for="email">Email </label>
+          <input type="email" required>
+          <label for="name">Comment </label>
+          <textarea required></textarea>
+          <button class="join" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-            </div>
-          </div>
+  <footer>
+    <div class="footer-inner">
+      <div class="logo-email">
+        <div class="flogo">
+          <img src="./images/logo.jpeg" alt="logo">
 
+          <span>BUILDNRUN</span>
+        </div>
+
+
+        <div class="column">
+          <h4>Useful links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#services">Product</a></li>
+            <li><a href="./about.html">About us</a></li>
+          </ul>
         </div>
 
       </div>
-    </section><!-- End Portfolio Details Section -->
 
-  </main><!-- End #main -->
+      <div class="line"></div>
+      <div class="bottom">
+        <div class="rights">
+          <p>© Build N Run 2023. All rights reserved.</p>
+        </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Waiting List here</h4>
-            <div id="ff-compose"></div>
-<script async defer src="https://formfacade.com/include/110196581247884762972/form/1FAIpQLSffjBfyCL9KTZ6FO6btwcoI6-IuaPCY__6NwvZN2sAsJgndxQ/clean.js?div=ff-compose"></script>
+        <div class="terms-policy">
+          <p>Terms of Service | Privacy Policy </p>
+        </div>
+
+        <div class="connection" id="contact">
+          <h5>Connect with us!</h5>
+          <div class="links">
+            <a href="https://instagram.com/buildnrun" target="_blank"> <i class="fa-brands fa-instagram icon"></i></a>
+            <a href="https://www.linkedin.com/company/buildnrun" target="_blank"> <i class="fa-brands fa-linkedin icon"></i></a>
+            <a href="https://twitter.com/BuildnRun_" target="_blank"> <i class="fa-brands fa-twitter icon"></i></a>
+            <!-- <b>Email: contact@buildnrun.org<b> -->
+            <a href="mailto: contact@buildnrun.org" target="_blank"><i class="fa-solid fa-envelope icon"></i></a>
+
+
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BuildNRun</h3>
-            <p>
-              Lagos, Nigeria 
-              <br>
-              <strong>Email:</strong> contact@buildnrun.org<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              < <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-              <li><a class="nav-link scrollto" href="about.html">About</a></li>
-              <li><a class="nav-link scrollto" href="index.html">Services</a></li>
-            </ul>
-          </div>
+  </footer>
 
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Connect With Us!</h4>
-            <div class="social-links mt-3">
-              <a href="https://twitter.com/BuildnRun_" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://instagram.com/buildnrun" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/buildnrun" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
+  <script>
+    function toggleMobileMenu(menu) {
+      menu.classList.toggle('open');
+    }
 
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>BuildNRun. 2023</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  </script>
 </body>
 
 </html>
